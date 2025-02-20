@@ -56,7 +56,9 @@ contract Campaign {
 
       Request memory currentReq = requests[requests.length-1];
 
-      currentReq.receiver.transfer(currentReq.value);
+      if(keccak256(abi.encodePacked(outcome)) == keccak256(abi.encodePacked("Approved"))){
+         currentReq.receiver.transfer(currentReq.value);
+      }
 
       requests[requests.length-1].outcome = outcome;
 
