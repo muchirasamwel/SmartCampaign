@@ -1,4 +1,4 @@
-# Campaign Smart Contract Project
+# 💼 Smart Campaign Contract Project 🗳️
 
 This project implements a decentralized crowdfunding campaign smart contract. The contract allows for democratic fund management where donors can vote on spending proposals.
 
